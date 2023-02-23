@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBSITE</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+   
+    <!-- Css -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="images/LOGO.png" height="48px" width="60px" class="logo"></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="shop.html" >Shop</a></li>
+                <li><a href="blog.html" >Blog</a></li>
+                <li><a href="about.html" >About</a></li>
+                <li><a href="contact.html" >Contact</a></li>
+                <li id="sh-bag"><a href="cart.html" class="active"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
+    </section>
+   
+    <section id="pageHeader" class="aboutHeader">
+        <h2>#Cart </h2>
+        <p>Your favorite styles ready to be purchased!</p>
+       
+    </section>
+
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#"><i class="fa-solid fa-circle-xmark"></i></a></td>
+                    <td><img src="images/products/pro-3.webp"></td>
+                    <td>Adidas Ozweego Bliss(W) Sneakers</td>
+                    <td>$80</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$80</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="fa-solid fa-circle-xmark"></i></a></td>
+                    <td><img src="images/arrivals/arrival-4.webp"></td>
+                    <td>Moschino lettering heeled pumps</td>
+                    <td>$97</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$97</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="fa-solid fa-circle-xmark"></i></a></td>
+                    <td><img src="images/products/pro-2.webp"></td>
+                    <td>adidas Yeezy-Foam sneakers</td>
+                    <td>$102</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$102</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="addCart" class="section-p1">
+        <div id="coupon"> <h3>Apply Coupon</h3>
+        <div>
+            <input type="text" placeholder="Enter Your Coupon">
+            <button type="button" class="btn btn-light">Apply</button>
+        </div>
+    </div>
+
+    <div id="subtotal">
+        <h3>Cart Total</h3>
+        <table>
+            <tr>
+                <td>Cart Subtotal</td>
+                <td>$279</td>
+            </tr>
+            <tr>
+                <td>Shipping</td>
+                <td>Free</td>
+            </tr>
+            <tr>
+                <td><strong>Total</strong></td>
+                <td><strong>$279</strong></td>
+            </tr>
+        </table>
+        <button type="button" class="btn btn-light">Procced to checkout</button>
+
+    </div>
+    </section>
+
+
+    <footer class="section-p1">
+        <div class="colm">
+            <img src="images/LOGO.png" height="48px" width="60px" class="logo">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> 562 Wellington Road, street 32, San Francisco</p>
+            <p><strong>Phone:</strong> +01 2222 365 / (+91) 01 2345 6789</p>
+            <p><strong>Hours:</strong> 10:00 - 18:00, Mon-Sat</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-pinterest-p"></i>
+                    <i class="fa-brands fa-youtube"></i>
+
+                </div>
+            </div>
+        </div>
+        <div class="colm">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions </a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="colm">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="colm">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="Row">
+                <button type="button" class="btn btn-outline-dark  btn-dn"><i class="fa-brands fa-apple"></i> Download</button>
+                <button type="button" class="btn btn-outline-dark  btn-dn"><i class="fa-brands fa-google-play"></i> Download</button>
+                </div>
+                 <p>Secured Payment Gateways</p>
+                <img src="images/pay.png">
+            </div>
+            <div class="copyright">
+                <p>© Copyright 2021, A&N</p>
+            </div>
+    </footer> 
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
